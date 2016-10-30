@@ -56,22 +56,16 @@ public class PingActivity extends AppCompatActivity {
 
                 String count = mPacketCount.getText().toString().trim();
                 String size = mPacketSize.getText().toString().trim();
-                Log.d(TAG, "count0: "+ count);
                 String countCmd = "";
                 String sizeCmd = "";
                 if (!("".equals(count))) {
-                    Log.d(TAG, "count: "+ count);
                     countCmd = "-c " + count + " ";
                 }
                 if (!("".equals(size))) {
                     sizeCmd = "-s " + size + " ";
                 }
 
-
-                //String countCmd = " -c " + count + " ";
-                //String sizeCmd = "-s " + size + " ";
                 String pingCmd = "ping " + countCmd + sizeCmd + ip;
-
                 startPing(pingCmd);
             }
         });
@@ -159,12 +153,6 @@ public class PingActivity extends AppCompatActivity {
                 }
                 scroll.fullScroll(ScrollView.FOCUS_DOWN);
 
-                /*int offset = inner.getMeasuredHeight() - scroll.getHeight();
-                if (offset < 0) {
-                    offset = 0;
-                }
-
-                scroll.scrollTo(0, offset);*/
             }
         });
     }
