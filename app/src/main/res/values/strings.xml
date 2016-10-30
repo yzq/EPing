@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ePing</string>
+    <string name="str_ip">IP地址</string>
+    <string name="str_count">分组数目</string>
+    <string name="str_size">分组长度（Byte）</string>
+    <string name="str_interval">发送数据包的间隔时间(s)</string>
+    <string name="str_ping">PING</string>
+</resources>
